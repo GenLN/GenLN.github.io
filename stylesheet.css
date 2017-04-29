@@ -2,6 +2,7 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      opacity: 0.9;
     }
     
     /* Add a gray background color and some padding to the footer */
@@ -25,14 +26,34 @@
 
  /*******carousel******/
  .carousel-inner > .item > img {
-  height:460px;
+  height:25em;
 }
   /******logooo***********/
   #logic{
-  	height: 150%;
-  	width: : 150%;
+  	height: 1.5em;
   }
 /*******fuuter*****/
 #futer{
-	background-color: #ff0000;
+	background-color: #404040;
+	/*background-color: #ff0000;*/
+}
+#ukras{
+	border-color: #ff0000;
+	border-width: 2vw;
+	margin-bottom: 0;
+}
+span img{
+	height:2em; 
+	width:2em;
+}
+footer span{
+	display: inline-block;
+	margin-right: 1em;
+}
+footer p{
+	color: white;
+}
+
+body{
+	padding-top: 70px;
 }
