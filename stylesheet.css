@@ -8,7 +8,7 @@
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
-      padding: 25px;
+      padding:40px;
     }
     
   .carousel-inner img {
@@ -55,5 +55,24 @@ footer p{
 }
 
 body{
-	padding-top: 70px;
+	padding-top: 50px;
+}
+#spam
+{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+#spam p{
+	position: absolute;
+	bottom:0;
+	right:0;
+	margin: 0;
+	width: 100%;
+	text-align:center;
+	font-size: 2em;
+	background-color: #000;
+	color:#fff;
+	opacity:.8;
 }
