@@ -39,12 +39,10 @@ body{
 
 #spam p{
 	position: absolute;
-	bottom:0;
-	right:0;
-	margin: 0;
+	top:10vw;
 	width: 100%;
 	text-align:center;
-	font-size: 2em;
+	font-size: 5em;
 	background-color: #000;
 	color:#fff;
 	opacity:.8;
