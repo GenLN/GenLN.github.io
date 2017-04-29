@@ -62,3 +62,10 @@ footer span{
 	width: 100%; /* Set width to 100% */
 	min-height:200px;
 }
+@media only screen and(max-width:800px)
+	{
+	.mali{
+		font-size:6px;
+		}
+}
+
