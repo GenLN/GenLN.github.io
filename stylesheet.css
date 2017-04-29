@@ -76,3 +76,8 @@ body{
 	color:#fff;
 	opacity:.8;
 }
+
+#nohiperlink{
+	text-decoration:none;
+	color:black;
+}
