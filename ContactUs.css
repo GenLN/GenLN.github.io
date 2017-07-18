@@ -45,50 +45,29 @@ footer span{
     font-size: 6px;
   }
 }
-@media only screen and (max-width:533px)
+@media screen and(max-width: 760px)
 {
-  .dev_label_input
+    textarea{
+      width: 250px;
+      height: 40px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width: 1800px)
+{
+  .kontakt > .FormaKontakt_dev
   {
-      width: 30vw;
-      height: 6vh;
-    }
-  .dev_label{
-      margin-bottom: 1vw;
-      width: 100%;
-    }
-    .dev_FormaKontakt{
-      width: 25vw;
-      margin: auto;
-      float: left;
-      display: inline-block;
+    width: 350px;
+    float: left;
+    padding: 10px;
+    display: inline-block;
+  }
+  .kontakt > .pitanja_dev
+  {
+    padding: 10px;
+    display: inline-block;
+  }
 
-    }
-    .dev_table {
-      border-spacing: 0.2vw;
-      border-collapse: separate;
-    }
-    .dev_td{
-      padding: 0.2vw;
-    }
-    .dev_kontakt{
-      padding: 1vw;
-      display: inline-block;
-    }
-
-    .dev_pitanja{
-      padding: 0.6vw;
-      display: inline-block;
-    }
-    .dev_input_text_email_tel{
-      border-radius: 1vw;
-      text-indent: 1vw;
-    }
-    .dev_textarea{
-      border-radius: 2vw;
-      text-indent: 1vw;
-      width: 80vw;
-      height: 20vh;
-    }
 }
 
 /**Tabela za kontakt**/
@@ -101,11 +80,11 @@ label{
   width: 100%;
   margin-top: 5px;
 }
-#FormaKontakt{
-  width: 350px;
+.FormaKontakt{
+  width: 100%;
   margin: auto;
   float: left;
-  display: inline-block;
+  box-sizing: border-box;
   
 }
 table {
@@ -115,14 +94,16 @@ table {
 td{
   padding: 3px;
 }
-#kontakt{
-  padding: 10px;
-  display: inline-block;
+
+.kontakt{
+  width: 100%;
+  float:left;
+  box-sizing: border-box;
 }
 
-#pitanja{
-  padding: 10px;
-  display: inline-block;
+.pitanja{
+  box-sizing: border-box;
+  float: left;
 }
 input[type="text"],input[type="tel"],input[type="email"]{
   border-radius: 10px;
@@ -131,4 +112,8 @@ input[type="text"],input[type="tel"],input[type="email"]{
 textarea{
   border-radius: 10px;
   text-indent: 5px;
+}
+
+#dugme{
+  clear: left;
 }
