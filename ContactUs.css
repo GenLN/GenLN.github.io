@@ -117,3 +117,7 @@ textarea{
 #dugme{
   clear: left;
 }
+.upozorenje{
+  color: red;
+  display: none;
+}
