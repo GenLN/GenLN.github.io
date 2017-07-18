@@ -36,14 +36,17 @@
         <fieldset>
           <legend><b>Kontakt forma</b></legend>
         </fieldset>
+        <p class="upozorenje" id="osobni">Niste unijeli sve podatke označene *</p>
         <div class="FormaKontakt FormaKontakt_dev" align="center">
-          <label class="dev_label"><input class="dev_label_input, dev_input_text_email_tel" type="text" placeholder="Ime*" name="Name"></label><br>
-          <label class="dev_label"><input class="dev_label_input, dev_input_text_email_tel" type="email" placeholder="Email*" name="Email"></label><br>
-          <label class="dev_label"><input class="dev_label_input, dev_input_text_email_tel" type="tel" placeholder="Telefon*" name="Phone"></label><br><br><br>
-          <label class="dev_label"><textarea class="dev_textarea" placeholder="Detalji, više o..." cols="33" rows="8"></textarea></label>
+          <label class="dev_label"><input id="Ime" class="dev_label_input, dev_input_text_email_tel" type="text" placeholder="Ime*" name="Name"></label><p class="upozorenje" id="pr_ime">Unesite ispravno ime</p><br>
+          <label class="dev_label"><input id="email" class="dev_label_input, dev_input_text_email_tel" type="email" placeholder="Email*" name="Email"></label><p class="upozorenje" id="pr_email">Unesite ispravan mail</p><br>
+          <label class="dev_label"><input id="tel" class="dev_label_input, dev_input_text_email_tel" type="tel" placeholder="Telefon*" name="Phone"></label>
+          <p class="upozorenje" id="pr_tel">Unesite ispravan broj telefona</p>
+          <br><br><br>
+          <label class="dev_label"><textarea id="textArea" class="dev_textarea" placeholder="Detalji, više o..." cols="33" rows="8"></textarea></label>
         </div>
         <div class="pitanja pitanja_dev">
-          <form>
+          <form id="forma" action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain">
             <table class="dev_table, dev_td" >
               <tr>
                 <td>
@@ -73,7 +76,8 @@
                 </td>
               </tr>
               <tr>
-                <td><h4><b>Najbolje doba dana za sastanak?*</b></h4></td>
+                <td><h4><b>Najbolje doba dana za sastanak?*</b></h4>
+                </td>
               </tr>
               <tr>
                 <td align="left">
@@ -86,7 +90,7 @@
         </div>
       </div>
       <div id="dugme">
-        <button type="button">Pošalji</button>
+        <button type="button" onclick="ValidateForm();">Pošalji</button>
         <fieldset>
           <legend></legend>
         </fieldset>
@@ -101,5 +105,7 @@
   </footer>
 
   <script src="./scriptMoj.js"></script>
+  <script src="./ContactUsSkripta.js"></script>
+
 </body>
 </html>
